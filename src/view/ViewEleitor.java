@@ -32,6 +32,7 @@ public class ViewEleitor extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jFileChooser2 = new javax.swing.JFileChooser();
+        jFrame1 = new javax.swing.JFrame();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -61,15 +62,26 @@ public class ViewEleitor extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        jmArquivo = new javax.swing.JMenu();
+        jmiSair = new javax.swing.JMenuItem();
+        jmEleitor = new javax.swing.JMenu();
+        jmCandidato = new javax.swing.JMenu();
+        jmPartido = new javax.swing.JMenu();
 
         jButton1.setText("jButton1");
 
         jButton6.setText("jButton5");
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Principal - URNA SOFT TAMBOR v1.0");
@@ -298,32 +310,32 @@ public class ViewEleitor extends javax.swing.JFrame {
                 .addGap(18, 18, 18))
         );
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arquivo-menu-2.png"))); // NOI18N
-        jMenu1.setText("ARQUIVO");
+        jmArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arquivo-menu-2.png"))); // NOI18N
+        jmArquivo.setText("ARQUIVO");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sair-menu-2.png"))); // NOI18N
-        jMenuItem1.setText("SAIR");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jmiSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        jmiSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sair-menu-2.png"))); // NOI18N
+        jmiSair.setText("SAIR");
+        jmiSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jmiSairActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jmArquivo.add(jmiSair);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jmArquivo);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/eleitor-menu-2.png"))); // NOI18N
-        jMenu2.setText("ELEITOR");
-        jMenuBar1.add(jMenu2);
+        jmEleitor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/eleitor-menu-2.png"))); // NOI18N
+        jmEleitor.setText("ELEITOR");
+        jMenuBar1.add(jmEleitor);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/candidatos-menu-2.png"))); // NOI18N
-        jMenu3.setText("CANDITADO");
-        jMenuBar1.add(jMenu3);
+        jmCandidato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/candidatos-menu-2.png"))); // NOI18N
+        jmCandidato.setText("CANDITADO");
+        jMenuBar1.add(jmCandidato);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partido-menu-2.png"))); // NOI18N
-        jMenu4.setText("PARTIDO");
-        jMenuBar1.add(jMenu4);
+        jmPartido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partido-menu-2.png"))); // NOI18N
+        jmPartido.setText("PARTIDO");
+        jMenuBar1.add(jmPartido);
 
         setJMenuBar(jMenuBar1);
 
@@ -342,12 +354,12 @@ public class ViewEleitor extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jmiSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiSairActionPerformed
         // TODO add your handling code here:
         int input = JOptionPane.showConfirmDialog(null, "FECHAR O PROGRAMA?", "VOCÊ ESTA ENCERRANDO O PROGRAMA", 0, 0);
         if(input == 0)
                 System.exit(0);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jmiSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -397,6 +409,7 @@ public class ViewEleitor extends javax.swing.JFrame {
     private javax.swing.JFileChooser jFileChooser2;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -408,12 +421,7 @@ public class ViewEleitor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -424,6 +432,11 @@ public class ViewEleitor extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JMenu jmArquivo;
+    private javax.swing.JMenu jmCandidato;
+    private javax.swing.JMenu jmEleitor;
+    private javax.swing.JMenu jmPartido;
+    private javax.swing.JMenuItem jmiSair;
     private java.awt.ScrollPane scrollPane1;
     // End of variables declaration//GEN-END:variables
 }

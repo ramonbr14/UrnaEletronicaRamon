@@ -49,11 +49,11 @@ public class ViewCandidato extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        jmArquivo = new javax.swing.JMenu();
+        jmiSair = new javax.swing.JMenuItem();
+        jmEleitor = new javax.swing.JMenu();
+        jmCandidato = new javax.swing.JMenu();
+        jmPartido = new javax.swing.JMenu();
 
         jButton1.setText("jButton1");
 
@@ -216,32 +216,32 @@ public class ViewCandidato extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arquivo-menu-2.png"))); // NOI18N
-        jMenu1.setText("ARQUIVO");
+        jmArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arquivo-menu-2.png"))); // NOI18N
+        jmArquivo.setText("ARQUIVO");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sair-menu-2.png"))); // NOI18N
-        jMenuItem1.setText("SAIR");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jmiSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        jmiSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sair-menu-2.png"))); // NOI18N
+        jmiSair.setText("SAIR");
+        jmiSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jmiSairActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jmArquivo.add(jmiSair);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jmArquivo);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/eleitor-menu-2.png"))); // NOI18N
-        jMenu2.setText("ELEITOR");
-        jMenuBar1.add(jMenu2);
+        jmEleitor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/eleitor-menu-2.png"))); // NOI18N
+        jmEleitor.setText("ELEITOR");
+        jMenuBar1.add(jmEleitor);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/candidatos-menu-2.png"))); // NOI18N
-        jMenu3.setText("CANDITADO");
-        jMenuBar1.add(jMenu3);
+        jmCandidato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/candidatos-menu-2.png"))); // NOI18N
+        jmCandidato.setText("CANDIDATO");
+        jMenuBar1.add(jmCandidato);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partido-menu-2.png"))); // NOI18N
-        jMenu4.setText("PARTIDO");
-        jMenuBar1.add(jMenu4);
+        jmPartido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partido-menu-2.png"))); // NOI18N
+        jmPartido.setText("PARTIDO POLITÍCO");
+        jMenuBar1.add(jmPartido);
 
         setJMenuBar(jMenuBar1);
 
@@ -260,12 +260,12 @@ public class ViewCandidato extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jmiSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiSairActionPerformed
         // TODO add your handling code here:
         int input = JOptionPane.showConfirmDialog(null, "FECHAR O PROGRAMA?", "VOCÊ ESTA ENCERRANDO O PROGRAMA", 0, 0);
         if(input == 0)
                 System.exit(0);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jmiSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -317,12 +317,7 @@ public class ViewCandidato extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -330,6 +325,11 @@ public class ViewCandidato extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JMenu jmArquivo;
+    private javax.swing.JMenu jmCandidato;
+    private javax.swing.JMenu jmEleitor;
+    private javax.swing.JMenu jmPartido;
+    private javax.swing.JMenuItem jmiSair;
     private java.awt.ScrollPane scrollPane1;
     // End of variables declaration//GEN-END:variables
 }
