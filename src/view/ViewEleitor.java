@@ -162,6 +162,11 @@ public class ViewEleitor extends javax.swing.JFrame {
 
         btnnovo1.setLabel("NOVO");
         btnnovo1.setName(""); // NOI18N
+        btnnovo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnnovo1ActionPerformed(evt);
+            }
+        });
 
         btnnovo2.setLabel("SALVAR");
         btnnovo2.setName(""); // NOI18N
@@ -327,14 +332,29 @@ public class ViewEleitor extends javax.swing.JFrame {
 
         jmEleitor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/eleitor-menu-2.png"))); // NOI18N
         jmEleitor.setText("ELEITOR");
+        jmEleitor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jmEleitorMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jmEleitor);
 
         jmCandidato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/candidatos-menu-2.png"))); // NOI18N
         jmCandidato.setText("CANDITADO");
+        jmCandidato.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jmCandidatoMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jmCandidato);
 
         jmPartido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partido-menu-2.png"))); // NOI18N
-        jmPartido.setText("PARTIDO");
+        jmPartido.setText("PARTIDO POLÍTICO");
+        jmPartido.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jmPartidoMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jmPartido);
 
         setJMenuBar(jMenuBar1);
@@ -360,6 +380,28 @@ public class ViewEleitor extends javax.swing.JFrame {
         if(input == 0)
                 System.exit(0);
     }//GEN-LAST:event_jmiSairActionPerformed
+
+    private void jmEleitorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmEleitorMouseClicked
+        // TODO add your handling code here:
+        new ViewEleitor().setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_jmEleitorMouseClicked
+
+    private void jmCandidatoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmCandidatoMouseClicked
+        // TODO add your handling code here:
+        new ViewCandidato().setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_jmCandidatoMouseClicked
+
+    private void jmPartidoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmPartidoMouseClicked
+        // TODO add your handling code here:
+        new ViewPartido().setVisible(true);
+            this.dispose();
+    }//GEN-LAST:event_jmPartidoMouseClicked
+
+    private void btnnovo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnnovo1ActionPerformed
 
     /**
      * @param args the command line arguments

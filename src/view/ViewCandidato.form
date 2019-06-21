@@ -45,6 +45,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="ELEITOR"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jmEleitorMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jmCandidato">
           <Properties>
@@ -53,6 +56,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="CANDIDATO"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jmCandidatoMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jmPartido">
           <Properties>
@@ -61,6 +67,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="PARTIDO POLIT&#xcd;CO"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jmPartidoMouseClicked"/>
+          </Events>
         </Menu>
       </SubComponents>
     </Menu>
