@@ -141,8 +141,6 @@ public class ViewCandidato extends javax.swing.JFrame {
         btnnovo2.setLabel("SALVAR");
         btnnovo2.setName(""); // NOI18N
 
-        jTextField3.setText("jTextField3");
-
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);

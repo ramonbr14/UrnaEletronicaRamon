@@ -152,6 +152,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtlogin">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="adm"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
@@ -159,6 +162,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JPasswordField" name="txtsenha">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="123"/>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtsenhaActionPerformed"/>
           </Events>

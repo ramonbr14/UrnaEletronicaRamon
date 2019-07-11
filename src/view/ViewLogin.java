@@ -79,8 +79,11 @@ public class ViewLogin extends javax.swing.JFrame {
 
         jLabel1.setText("PERFIL DE ACESSO");
 
+        txtlogin.setText("adm");
+
         jLabel2.setText("SENHA DE SEGURANÇA");
 
+        txtsenha.setText("123");
         txtsenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtsenhaActionPerformed(evt);
