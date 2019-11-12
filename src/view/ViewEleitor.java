@@ -161,6 +161,13 @@ public class ViewEleitor extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 51));
         jLabel3.setText("CEP:");
 
+        try {
+            txtFCep.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txtFCep.setText("     -   ");
+
         jLabel10.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 51));
         jLabel10.setText("RUA:");
@@ -271,15 +278,23 @@ public class ViewEleitor extends javax.swing.JFrame {
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "elenome", "elecpf", "elecep", "elerua", "elenumero", "elebairro"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
         jTable2.setMinimumSize(new java.awt.Dimension(60, 30));
         jScrollPane2.setViewportView(jTable2);
 
@@ -400,9 +415,10 @@ public class ViewEleitor extends javax.swing.JFrame {
 
     private void btnSalvarEleitorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarEleitorActionPerformed
         // TODO add your handling code here:
-        if(txtFCPF.getText().trim().length() < 14 || txtNome.getText().trim().equals("")){
-            JOptionPane.showMessageDialog(rootPane, "CAMPOS PREENCHIDOS INCORRETAMENTE","ERRO DE DADOS",JOptionPane.ERROR_MESSAGE);
-        }
+    System.out.println(txtFCPF.getText().length());        
+    if(txtFCPF.getText().trim().length() < 14 || txtNome.getText().trim().equals("")){
+        JOptionPane.showMessageDialog(rootPane, "CAMPOS PREENCHIDOS INCORRETAMENTE","ERRO DE DADOS",JOptionPane.ERROR_MESSAGE);
+    }
     }//GEN-LAST:event_btnSalvarEleitorActionPerformed
 
     private void txtFCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFCPFActionPerformed
