@@ -10,34 +10,34 @@ package model.bean;
  * @author Ramonbr14
  */
 public class Urna {
-    private int id;
-    private String datahora;
-    private int voto;
+    private int urncodigo;
+    private String urndatahora;
+    private int urnvoto;
     private Candidato canditado;
     private Eleitor eleitor;
 
-    public int getId() {
-        return id;
+    public int getUrncodigo() {
+        return urncodigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUrncodigo(int urncodigo) {
+        this.urncodigo = urncodigo;
     }
 
-    public String getDatahora() {
-        return datahora;
+    public String getUrndatahora() {
+        return urndatahora;
     }
 
-    public void setDatahora(String datahora) {
-        this.datahora = datahora;
+    public void setUrndatahora(String urndatahora) {
+        this.urndatahora = urndatahora;
     }
 
-    public int getVoto() {
-        return voto;
+    public int getUrnvoto() {
+        return urnvoto;
     }
 
-    public void setVoto(int voto) {
-        this.voto = voto;
+    public void setUrnvoto(int urnvoto) {
+        this.urnvoto = urnvoto;
     }
 
     public Candidato getCanditado() {
@@ -55,6 +55,8 @@ public class Urna {
     public void setEleitor(Eleitor eleitor) {
         this.eleitor = eleitor;
     }
+
+    
     
     
 }

@@ -10,33 +10,33 @@ package model.bean;
  * @author Ramonbr14
  */
 public class Usuario {
-    private int id;
-    private String login;
-    private String senha;
+    private int usucodigo;
+    private String usulogin;
+    private String ususenha;
 
-    public int getId() {
-        return id;
+    public int getUsucodigo() {
+        return usucodigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUsucodigo(int usucodigo) {
+        this.usucodigo = usucodigo;
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsulogin() {
+        return usulogin;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setUsulogin(String usulogin) {
+        this.usulogin = usulogin;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getUsusenha() {
+        return ususenha;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setUsusenha(String ususenha) {
+        this.ususenha = ususenha;
     }
-    
+
     
 }

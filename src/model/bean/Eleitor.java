@@ -11,12 +11,12 @@ package model.bean;
  */
 public class Eleitor {
     private int id;
-    private String nome;
-    private String cpf;
-    private String cep;
-    private String rua;
-    private String bairro;
-    private String numero;
+    private String elenome;
+    private String elecpf;
+    private String elecep;
+    private String elerua;
+    private String elebairro;
+    private String elenumero;
 
     public int getId() {
         return id;
@@ -26,54 +26,53 @@ public class Eleitor {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getElenome() {
+        return elenome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setElenome(String elenome) {
+        this.elenome = elenome;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getElecpf() {
+        return elecpf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setElecpf(String elecpf) {
+        this.elecpf = elecpf;
     }
 
-    public String getCep() {
-        return cep;
+    public String getElecep() {
+        return elecep;
     }
 
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setElecep(String elecep) {
+        this.elecep = elecep;
     }
 
-    public String getRua() {
-        return rua;
+    public String getElerua() {
+        return elerua;
     }
 
-    public void setRua(String rua) {
-        this.rua = rua;
+    public void setElerua(String elerua) {
+        this.elerua = elerua;
     }
 
-    public String getBairro() {
-        return bairro;
+    public String getElebairro() {
+        return elebairro;
     }
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setElebairro(String elebairro) {
+        this.elebairro = elebairro;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getElenumero() {
+        return elenumero;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setElenumero(String elenumero) {
+        this.elenumero = elenumero;
     }
     
-    
-    
+           
 }

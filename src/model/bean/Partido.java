@@ -12,26 +12,42 @@ import java.util.Date;
  * @author Ramonbr14
  */
 public class Partido {
-    private int id;
-    private String nome;
-    private Date fundacao;
-    private String descricao;
+    private int parcodigo;
+    private String parnome;
+    private Date parfundacao;
+    private String pardescricao;
 
-    public int getId() {
-        return id;
+    public int getParcodigo() {
+        return parcodigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setParcodigo(int parcodigo) {
+        this.parcodigo = parcodigo;
     }
 
-    public String getNome() {
-        return nome;
+    public String getParnome() {
+        return parnome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setParnome(String parnome) {
+        this.parnome = parnome;
     }
-    
+
+    public Date getParfundacao() {
+        return parfundacao;
+    }
+
+    public void setParfundacao(Date parfundacao) {
+        this.parfundacao = parfundacao;
+    }
+
+    public String getPardescricao() {
+        return pardescricao;
+    }
+
+    public void setPardescricao(String pardescricao) {
+        this.pardescricao = pardescricao;
+    }
+
     
 }

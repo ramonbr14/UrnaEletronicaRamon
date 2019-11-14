@@ -10,41 +10,42 @@ package model.bean;
  * @author Ramonbr14
  */
 public class Candidato {
-    private int id;
-    private String nome;
-    private int numero;
-    private Partido partido;
+    private int cancodigo;
+    private String cannome;
+    private int cannumero;
+    private Partido canpartido;
 
-    public int getId() {
-        return id;
+    public int getCancodigo() {
+        return cancodigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCancodigo(int cancodigo) {
+        this.cancodigo = cancodigo;
     }
 
-    public String getNome() {
-        return nome;
+    public String getCannome() {
+        return cannome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setCannome(String cannome) {
+        this.cannome = cannome;
     }
 
-    public int getNumero() {
-        return numero;
+    public int getCannumero() {
+        return cannumero;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setCannumero(int cannumero) {
+        this.cannumero = cannumero;
     }
 
-    public Partido getPartido() {
-        return partido;
+    public Partido getCanpartido() {
+        return canpartido;
     }
 
-    public void setPartido(Partido partido) {
-        this.partido = partido;
+    public void setCanpartido(Partido canpartido) {
+        this.canpartido = canpartido;
     }
+
     
 }
