@@ -16,6 +16,21 @@ public class Urna {
     private Candidato canditado;
     private Eleitor eleitor;
 
+    public Urna() {
+    }
+
+    public Urna(int urncodigo, String urndatahora, int urnvoto, Candidato canditado, Eleitor eleitor) {
+        this.urncodigo = urncodigo;
+        this.urndatahora = urndatahora;
+        this.urnvoto = urnvoto;
+        this.canditado = canditado;
+        this.eleitor = eleitor;
+    }
+
+    
+    
+    
+    
     public int getUrncodigo() {
         return urncodigo;
     }

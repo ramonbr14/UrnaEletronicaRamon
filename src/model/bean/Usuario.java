@@ -14,6 +14,18 @@ public class Usuario {
     private String usulogin;
     private String ususenha;
 
+    public Usuario() {
+    }
+
+    
+    public Usuario(int usucodigo, String usulogin, String ususenha) {
+        this.usucodigo = usucodigo;
+        this.usulogin = usulogin;
+        this.ususenha = ususenha;
+    }
+    
+    
+
     public int getUsucodigo() {
         return usucodigo;
     }

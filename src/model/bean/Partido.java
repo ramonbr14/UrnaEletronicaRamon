@@ -17,6 +17,20 @@ public class Partido {
     private Date parfundacao;
     private String pardescricao;
 
+    public Partido() {
+    }
+    
+    public Partido(int parcodigo, String parnome, Date parfundacao, String pardescricao) {
+        this.parcodigo = parcodigo;
+        this.parnome = parnome;
+        this.parfundacao = parfundacao;
+        this.pardescricao = pardescricao;
+    }
+    
+    
+    
+    
+
     public int getParcodigo() {
         return parcodigo;
     }

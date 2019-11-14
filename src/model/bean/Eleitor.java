@@ -18,6 +18,23 @@ public class Eleitor {
     private String elebairro;
     private String elenumero;
 
+    public Eleitor() {
+    }
+
+    public Eleitor(int id, String elenome, String elecpf, String elecep, String elerua, String elebairro, String elenumero) {
+        this.id = id;
+        this.elenome = elenome;
+        this.elecpf = elecpf;
+        this.elecep = elecep;
+        this.elerua = elerua;
+        this.elebairro = elebairro;
+        this.elenumero = elenumero;
+    }
+    
+    
+    
+    
+
     public int getId() {
         return id;
     }

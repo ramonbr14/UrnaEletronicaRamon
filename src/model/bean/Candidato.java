@@ -15,6 +15,20 @@ public class Candidato {
     private int cannumero;
     private Partido canpartido;
 
+    public Candidato() {
+    
+    }
+
+    public Candidato(int cancodigo, String cannome, int cannumero, Partido canpartido) {
+        this.cancodigo = cancodigo;
+        this.cannome = cannome;
+        this.cannumero = cannumero;
+        this.canpartido = canpartido;
+    }
+
+    
+    
+    
     public int getCancodigo() {
         return cancodigo;
     }
