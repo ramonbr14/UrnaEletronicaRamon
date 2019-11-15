@@ -1,22 +1,19 @@
 package connection;
-import com.mysql.cj.xdevapi.PreparableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 
 public class ConnectionFactory {
-    public static String DRIVE = "com.mysql.jdbc.Driver";
+
+    public static String DRIVE = "com.mysql.cj.jdbc.Driver";
     public static String URL = "jdbc:mysql://localhost:3306/urnaeletronicadb";
     public static String USER = "root";
     public static String PASS = "root";
     
     
-    public Connection getConnecton(){
+    public static Connection getConnection(){
     
         try {
             Class.forName(DRIVE);

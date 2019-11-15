@@ -50,6 +50,7 @@ public class ViewCandidato extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
         jmArquivo = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jmiSair = new javax.swing.JMenuItem();
         jmEleitor = new javax.swing.JMenu();
         jmCandidato = new javax.swing.JMenu();
@@ -217,6 +218,15 @@ public class ViewCandidato extends javax.swing.JFrame {
         jmArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arquivo-menu-2.png"))); // NOI18N
         jmArquivo.setText("ARQUIVO");
 
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/login.png"))); // NOI18N
+        jMenuItem1.setText("Cadastrar Usuario");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jmArquivo.add(jMenuItem1);
+
         jmiSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
         jmiSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sair-menu-2.png"))); // NOI18N
         jmiSair.setText("SAIR");
@@ -298,6 +308,10 @@ public class ViewCandidato extends javax.swing.JFrame {
             this.dispose();
     }//GEN-LAST:event_jmPartidoMouseClicked
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -349,6 +363,7 @@ public class ViewCandidato extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

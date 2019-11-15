@@ -279,19 +279,19 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtDescricaoPartido" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtnomepartido" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel4" min="-2" pref="162" max="-2" attributes="0"/>
+                              <Component id="jlfundacao" min="-2" pref="162" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jDateChooser1" min="-2" pref="134" max="-2" attributes="0"/>
+                              <Component id="jdDataFundacao" min="-2" pref="134" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jlnomepartido" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jlDescricao" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
@@ -300,11 +300,11 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="btnnovo1" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnnovoPartido" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnnovo" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnExcluirPartido" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnnovo2" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnSalvarPartido" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -313,23 +313,23 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jlnomepartido" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField1" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="txtnomepartido" min="-2" pref="33" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <Component id="jlfundacao" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jdDataFundacao" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlDescricao" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField2" pref="39" max="32767" attributes="0"/>
+                      <Component id="txtDescricaoPartido" pref="39" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnnovo" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="btnnovo2" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="btnnovo1" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="btnExcluirPartido" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="btnSalvarPartido" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="btnnovoPartido" min="-2" pref="42" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -337,7 +337,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JLabel" name="jlnomepartido">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Black" size="18" style="1"/>
@@ -348,7 +348,7 @@
                 <Property name="text" type="java.lang.String" value="NOME DO PARTIDO"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="jlfundacao">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Black" size="18" style="1"/>
@@ -359,7 +359,7 @@
                 <Property name="text" type="java.lang.String" value="FUNDADO EM:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
+            <Component class="javax.swing.JLabel" name="jlDescricao">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Black" size="18" style="1"/>
@@ -370,25 +370,25 @@
                 <Property name="text" type="java.lang.String" value="DESCRI&#xc7;&#xc3;O"/>
               </Properties>
             </Component>
-            <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+            <Component class="com.toedter.calendar.JDateChooser" name="jdDataFundacao">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="txtDescricaoPartido">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="txtnomepartido">
             </Component>
-            <Component class="java.awt.Button" name="btnnovo">
+            <Component class="java.awt.Button" name="btnExcluirPartido">
               <Properties>
                 <Property name="label" type="java.lang.String" value="EXCLUIR"/>
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Button" name="btnnovo1">
+            <Component class="java.awt.Button" name="btnnovoPartido">
               <Properties>
                 <Property name="label" type="java.lang.String" value="NOVO"/>
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
               </Properties>
             </Component>
-            <Component class="java.awt.Button" name="btnnovo2">
+            <Component class="java.awt.Button" name="btnSalvarPartido">
               <Properties>
                 <Property name="label" type="java.lang.String" value="SALVAR"/>
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>

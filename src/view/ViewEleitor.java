@@ -42,9 +42,9 @@ public class ViewEleitor extends javax.swing.JFrame {
         btnDeleteEleitor = new java.awt.Button();
         btnNovoEleitor = new java.awt.Button();
         btnSalvarEleitor = new java.awt.Button();
-        jLabel7 = new javax.swing.JLabel();
+        jlNomeEleitor = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        jlCPF = new javax.swing.JLabel();
         txtFCPF = new javax.swing.JFormattedTextField();
         jLabel3 = new javax.swing.JLabel();
         txtFCep = new javax.swing.JFormattedTextField();
@@ -138,13 +138,13 @@ public class ViewEleitor extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel7.setText("NOME DO ELEITOR");
+        jlNomeEleitor.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        jlNomeEleitor.setForeground(new java.awt.Color(255, 255, 51));
+        jlNomeEleitor.setText("NOME DO ELEITOR");
 
-        jLabel8.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel8.setText("CPF:");
+        jlCPF.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        jlCPF.setForeground(new java.awt.Color(255, 255, 51));
+        jlCPF.setText("CPF:");
 
         try {
             txtFCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
@@ -166,7 +166,6 @@ public class ViewEleitor extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        txtFCep.setText("     -   ");
 
         jLabel10.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 51));
@@ -208,7 +207,7 @@ public class ViewEleitor extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtNome)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(jlCPF)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFCPF, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -216,7 +215,7 @@ public class ViewEleitor extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtFCep, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addComponent(jlNomeEleitor)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel10)
@@ -243,7 +242,7 @@ public class ViewEleitor extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7)
+                .addComponent(jlNomeEleitor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
@@ -252,7 +251,7 @@ public class ViewEleitor extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtFCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel3)
-                        .addComponent(jLabel8)))
+                        .addComponent(jlCPF)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
@@ -478,8 +477,6 @@ public class ViewEleitor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -487,6 +484,8 @@ public class ViewEleitor extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
+    private javax.swing.JLabel jlCPF;
+    private javax.swing.JLabel jlNomeEleitor;
     private javax.swing.JMenu jmArquivo;
     private javax.swing.JMenu jmCandidato;
     private javax.swing.JMenu jmEleitor;
