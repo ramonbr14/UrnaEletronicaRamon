@@ -4,23 +4,22 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 public class ConnectionFactory {
 
     public static String DRIVE = "com.mysql.cj.jdbc.Driver";
-    public static String URL = "jdbc:mysql://localhost:3306/urnaeletronicadb";
+    public static String URL = "jdbc:mysql://localhost:3306/urnaeletronicadb?useTimezone=true&serverTimezone=UTC";
     public static String USER = "root";
     public static String PASS = "root";
     
     
     public static Connection getConnection(){
-    
         try {
             Class.forName(DRIVE);
             return DriverManager.getConnection(URL, USER, PASS);
-            
         } catch (ClassNotFoundException | SQLException ex) {
-            throw new RuntimeException("Erro da Conexão!", ex);
+            throw new RuntimeException("Erro da Conexão! getConnection()", ex);
         }
     }
     

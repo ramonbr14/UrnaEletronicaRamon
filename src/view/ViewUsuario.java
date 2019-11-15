@@ -5,7 +5,10 @@
  */
 package view;
 
+import javax.print.event.PrintJobEvent;
 import javax.swing.JOptionPane;
+import model.bean.Usuario;
+import model.dao.UsuarioDAO;
 
 /**
  *
@@ -109,6 +112,11 @@ public class ViewUsuario extends javax.swing.JFrame {
 
         btnnovousuario.setLabel("NOVO");
         btnnovousuario.setName(""); // NOI18N
+        btnnovousuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnnovousuarioActionPerformed(evt);
+            }
+        });
 
         btnnovo2.setLabel("SALVAR");
         btnnovo2.setName(""); // NOI18N
@@ -127,9 +135,9 @@ public class ViewUsuario extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(btnnovousuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnnovousuario, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(btnexcluirusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -296,6 +304,25 @@ public class ViewUsuario extends javax.swing.JFrame {
         new ViewPartido().setVisible(true);
             this.dispose();
     }//GEN-LAST:event_jmPartidoMouseClicked
+
+    private void btnnovousuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnovousuarioActionPerformed
+        // TODO add your handling code here:
+        /*if(txtsenha!=txtConfirmaSenha){
+            JOptionPane.showMessageDialog(null, "SENHAS NÃO SÃO IDENTICAS"+txtsenha.getText()+ " e " +txtConfirmaSenha.getText(), "SENHAS DIFERENTES!",JOptionPane.INFORMATION_MESSAGE);
+            txtsenha.setText("");
+            txtConfirmaSenha.setText("");
+        }else{*/
+            Usuario u = new Usuario();
+            UsuarioDAO udao = new UsuarioDAO();
+            u.setUsulogin(txtLogin.getText());
+            u.setUsusenha(txtsenha.getText());
+            udao.create(u);
+            JOptionPane.showMessageDialog(null, "passou do udao.create","URNA ELEITORAL S/A", JOptionPane.INFORMATION_MESSAGE);
+        //}
+        
+        
+        
+    }//GEN-LAST:event_btnnovousuarioActionPerformed
 
     /**
      * @param args the command line arguments
