@@ -10,15 +10,15 @@ package model.bean;
  * @author Ramonbr14
  */
 public class Usuario {
-    private int usucodigo;
-    private String usulogin;
-    private String ususenha;
+    private long usucodigo = 0;
+    private String usulogin = null;
+    private String ususenha =null;
 
     public Usuario() {
     }
 
     
-    public Usuario(int usucodigo, String usulogin, String ususenha) {
+    public Usuario(long usucodigo, String usulogin, String ususenha) {
         this.usucodigo = usucodigo;
         this.usulogin = usulogin;
         this.ususenha = ususenha;
@@ -26,7 +26,7 @@ public class Usuario {
     
     
 
-    public int getUsucodigo() {
+    public long getUsucodigo() {
         return usucodigo;
     }
 
